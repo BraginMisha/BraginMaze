@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using C = System.Console;
 
 namespace BraginMaze
@@ -89,11 +87,6 @@ namespace BraginMaze
                 end = Node.ReachTo(ref list, NodesHeight, NodesWidth, NodesStartH, NodesStartW, NodesEndH, NodesEndW);
                 if (end.Count > 1) break;
             }
-            /*list_Fog = new List<string>();
-            for (int i = 0;i < NodesHeight; i++)
-            {
-                list_Fog.Add(new string(' ', NodesWidth));
-            }*/
             Debug.WriteLine($"Attempts: {ii};");
         }
         
